@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Hello World</title>
+  <meta charset="utf-8">
+  <title>Feedback</title>
 </head>
 <body>
-  <h1>Hello World</h1>
+  <h2>Feedback-Formular</h2>
+
   <div id="map"></div>
-  <script src="index.js"></script>
+
+  <form id="feedback" method="POST" action="feedback_send.php">
+    <input type="radio" name="geschlecht" value="Frau"/> Frau
+    <input type="radio" name="geschlecht" value="Herr"/> Herr<br />
+    <table>
+      <tr><td>Name:</td>
+         <td><input type="text" name="name" size="50" /></td>
+      </tr>
+      <tr><td>E-Mail: </td>
+         <td><input type="text" name="email" size="50" /></td>
+      </tr>
+    </table>
+    Feedback: <br />
+    <textarea name="message" rows="10" cols="50"></textarea>
+    <br />
+    <input type="checkbox" name="team" checked="checked" value="ON" />
+           Ich bin Mitglied des geoweb-Teams <br /><br />
+    <input type="submit" value="Abschicken">
+    <input type="reset" value="Zurücksetzen"> <br /><br />
+    Ihr Feedback wird in der Projekt-Datenbank gespeichert.<br /><br />
+    <br />
+  </form>
+  <script src="index.js" charset="utf-8"></script>
 </body>
 </html>

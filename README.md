@@ -1,6 +1,6 @@
-# G06 Repository for Geoweb Block 4
+# Instructor's repository for GeoWeb Block 4
 
-Ein Selbstversuch zu git, atom etc.
+This project exercises the use of OpenLayers and WFS to communicate with an SQLite database.
 
 ## Getting started
 
